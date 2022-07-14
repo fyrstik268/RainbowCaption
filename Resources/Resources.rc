@@ -1,0 +1,232 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "..\Headers\Resources.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP_ICON1           ICON                    "icon.ico"
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS DIALOGEX 0, 0, 201, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "RainbowCaption Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDOK,144,54,50,14
+    CONTROL         "Speed: (Smaller number = Faster)",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX | WS_GROUP,78,18,110,8
+    EDITTEXT        IDC_EDIT_DELAY,78,30,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_DELAY,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,120,30,11,14
+    COMBOBOX        IDC_PRIORITY_SEL,12,30,60,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",IDC_RESET,90,54,50,14
+    CONTROL         "Priority:",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX | WS_GROUP,12,18,26,8
+    GROUPBOX        "Settings",IDC_STATIC,6,6,186,42
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 231, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "About RainbowCaption"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,174,42,50,14
+    CONTROL         "<a>https://github.com/PersonMedBrukernavn/RainbowCaption</a>",IDC_GITHUB_LINK,
+                    "SysLink",LWS_NOPREFIX | WS_TABSTOP,36,24,192,12
+    CONTROL         "RainbowCaption v1.0\n© 2022 Tom Arnesen",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,36,6,72,18
+    ICON            IDI_APP_ICON1,IDC_STATIC,6,12,20,20,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    PUSHBUTTON      "License",IDC_LICENSE,120,42,50,14
+END
+
+IDD_LICENSE DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "RainbowCaption License"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,252,156,50,14
+    EDITTEXT        IDC_LICENSE,6,6,294,144,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LICENSE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (Neutral) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Norwegian Bokmål (Norway) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NOR)
+LANGUAGE LANG_NORWEGIAN, SUBLANG_NORWEGIAN_BOKMAL
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "..\\Headers\\Resources.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "FileDescription", "RainbowCaption"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "RainbowCaption"
+            VALUE "LegalCopyright", "© 2022 Tom Arnesen"
+            VALUE "OriginalFilename", "RainbowCaption.exe"
+            VALUE "ProductName", "RainbowCaption"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+#endif    // Norwegian Bokmål (Norway) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
