@@ -1,6 +1,8 @@
 # RainbowCaption
 A small program to make the window title bars do an RGB cycle.
 
+![preview](https://user-images.githubusercontent.com/91881038/179089310-64beb68f-5f62-4c07-97be-91cadd14accd.gif)
+
 ## Usage
 An icon is added to the system tray area. You'll figure out the rest.\
 Note that not all windows are supported, and in spesific cases there will be some visual bugs.\
