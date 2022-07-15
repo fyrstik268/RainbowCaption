@@ -8,6 +8,14 @@ static void LoadConfig(void);
 static void SaveConfig(void);
 
 __declspec(noreturn) void __cdecl MainEntrypoint(void) {
+	WCHAR VerBuffer[16];
+	DWORD VerBufferSize = 16;
+	RegGetValueW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", L"CurrentBuildNumber", RRF_RT_REG_SZ, NULL, VerBuffer, &VerBufferSize);
+	if(wcstoul(VerBuffer, NULL, 10) < 22000) {
+		MessageBoxW(NULL, L"Error: Windows 11 Build 22000 or newer is required for this program to run.", L"RainbowCaption Error", MB_OK | MB_ICONERROR);
+		ExitProcess(*(UINT*)"SUNV");
+	}
+
 	LoadConfig();
 	ProcessModule = GetModuleHandleW(NULL);
 	HANDLE const restrict CyclerThread = CreateThread(NULL, 1, Cycler, NULL, STACK_SIZE_PARAM_IS_A_RESERVATION, NULL);
