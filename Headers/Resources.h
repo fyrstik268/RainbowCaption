@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by D:\Visual Studio\Repositories\RainbowCaption\Resources\Resources.rc
+// Used by F:\source\fyrstik268\RainbowCaption\Resources\Resources.rc
 //
 #define IDD_SETTINGS                    9
 #define IDI_APP_ICON1                   101

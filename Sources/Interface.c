@@ -115,7 +115,7 @@ INT_PTR CALLBACK AboutDialogProc(HWND Dialog, UINT Message, WPARAM WParam, LPARA
 
 static const WCHAR LicenseText[] = L"MIT License\r\n\
 \r\n\
-Copyright(c) 2022 Tom Arnesen\r\n\
+Copyright(c) 2024 Tom Arnesen\r\n\
 \r\n\
 Permission is hereby granted, free of charge, to any person obtaining a copy \
 of this software and associated documentation files (the \"Software\"), to deal \

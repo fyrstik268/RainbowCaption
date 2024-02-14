@@ -23,13 +23,7 @@ static BOOL CALLBACK SetCaptionColour(HWND Window, LPARAM Unused) {
 	HWND const restrict ForegroundWindow = GetForegroundWindow();
 	const COLORREF StoredColour = Colour.Colour;
 	if(ForegroundWindow != Window) {
-		/* Good Enough. */
-		if(Colour.RGBX[0] > 105) Colour.RGBX[0] = 255;
-		else Colour.RGBX[0] += 150;
-		if(Colour.RGBX[1] > 105) Colour.RGBX[1] = 255;
-		else Colour.RGBX[1] += 150;
-		if(Colour.RGBX[2] > 105) Colour.RGBX[2] = 255;
-		else Colour.RGBX[2] += 150;
+		for(char i = 0; i < 3; i++) Colour.RGBX[i] = (BYTE)((float)Colour.RGBX[i] / 255.f * 127.f) + 127;
 	}
 	DwmSetWindowAttribute(Window, DWMWA_CAPTION_COLOR, &Colour.Colour, sizeof(Colour.Colour)); /* DWM's complaining a bit in the debug console but everything seems to be OK */
 	Colour.Colour = StoredColour;

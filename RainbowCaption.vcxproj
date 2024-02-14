@@ -117,7 +117,7 @@
       <Profile>true</Profile>
       <CLRSupportLastError>Disabled</CLRSupportLastError>
       <CETCompat>true</CETCompat>
-      <AdditionalDependencies>dwmapi.lib;advapi32.lib;ucrt.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>msvcrt.lib;dwmapi.lib;advapi32.lib;ucrt.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
     <Manifest>
@@ -194,7 +194,7 @@
       <SetChecksum>true</SetChecksum>
       <CLRSupportLastError>Disabled</CLRSupportLastError>
       <CETCompat>true</CETCompat>
-      <AdditionalDependencies>dwmapi.lib;advapi32.lib;ucrt.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>msvcrt.lib;dwmapi.lib;advapi32.lib;ucrt.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
     <ResourceCompile>
