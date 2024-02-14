@@ -69,7 +69,7 @@ BEGIN
     DEFPUSHBUTTON   "Close",IDOK,174,42,50,14
     CONTROL         "<a>https://github.com/PersonMedBrukernavn/RainbowCaption</a>",IDC_GITHUB_LINK,
                     "SysLink",LWS_NOPREFIX | WS_TABSTOP,36,24,192,12
-    CONTROL         "RainbowCaption v1.1\n© 2022 Tom Arnesen",IDC_STATIC,
+    CONTROL         "RainbowCaption v1.1\n© 2024 Tom Arnesen",IDC_STATIC,
                     "Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,36,6,72,18
     ICON            IDI_APP_ICON1,IDC_STATIC,6,12,20,20,SS_CENTERIMAGE | SS_REALSIZEIMAGE
     PUSHBUTTON      "License",IDC_LICENSE,120,42,50,14
